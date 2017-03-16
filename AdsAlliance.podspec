@@ -1,21 +1,19 @@
 Pod::Spec.new do |s|
   s.name         = 'AdsAlliance'
   s.version      = '1.0.0'
-  s.summary      = '集成百度和广点通'
+  s.summary      = '集成百度和广点通 SDK 的 Pod'
 
   s.description  = <<-DESC
-                   集成百度和广点通
+                   集成百度和广点通 SDK 的 Pod
                    DESC
 
-  s.homepage     = 'http://club.alipay.com/read-htm-tid-9976972.html'
-  s.license      = { :text => 'Copyright', :text => '' }
-  s.authors            = { 'AdsAlliance' => 'https://www.alipay.com/' }
+  s.homepage     = 'https://github.com/pinping'
+  s.license      = { :text => 'Copyright', :text => 'pinping' }
+  s.authors            = { 'AdsAlliance' => 'https://github.com/pinping' }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/MapleJ/AlipaySDK.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/pinping/AdsAlliance.git", :tag => 'v#{s.version}' }
 
-  s.resource = 'baidumobadsdk.bundle'
-
-  s.source_files   = "libs/*"
+  s.source_files   = "libs/*", 'baidumobadsdk.bundle'
   s.vendored_frameworks = 'BaiduMobAdSDK.framework'
   s.public_header_files = 'BaiduMobAdSDK.framework/Headers/**/*.{h,a}'
 
