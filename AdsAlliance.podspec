@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/pinping/AdsAlliance.git", :tag => 'v#{s.version}' }
 
-  s.source_files   = "libs/*", 'baidumobadsdk.bundle'
+  s.source_files   = "libs/*", "baidumobadsdk.bundle"
   s.vendored_frameworks = 'BaiduMobAdSDK.framework'
   s.public_header_files = 'BaiduMobAdSDK.framework/Headers/**/*.{h,a}'
 
-  s.frameworks = 'AdSupport', 'CoreLocation', 'QuarzCore', 'SystemConfiguration', 'CoreTelephony', 'Security', 'StoreKit', 'libz'
+  s.frameworks = 'AdSupport', 'CoreLocation', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'Security', 'StoreKit', 'libz'
   s.requires_arc = true
   #s.dependency 'OpenSSL-Universal', '~> 1.0.1.j-2'
 end
