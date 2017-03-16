@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :text => 'Copyright', :text => 'pinping' }
   s.authors            = { 'AdsAlliance' => 'https://github.com/pinping' }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/pinping/AdsAlliance.git", :tag => 'v#{s.version}' }
+  s.source       = { :git => "https://github.com/pinping/AdsAlliance.git", :tag => '1.0.0' }
 
   s.source_files   = "libs/*", "baidumobadsdk.bundle"
   s.vendored_frameworks = 'BaiduMobAdSDK.framework'
