@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'BaiduMobAdSDK.framework'
   s.public_header_files = 'BaiduMobAdSDK.framework/Headers/**/*.{h,a}'
 
-  s.frameworks = 'AdSupport', 'CoreLocation', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'Security', 'StoreKit', 'libz'
+  s.frameworks   = 'AdSupport', 'CoreLocation', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'SafariServices', 'Security','MessageUI', 'CoreMotion', 'StoreKit'
+  s.libraries    = 'libz', 'Libc++'
   s.requires_arc = true
   #s.dependency 'OpenSSL-Universal', '~> 1.0.1.j-2'
 end
